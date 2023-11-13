@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@100&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@100&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Merriweather:wght@300&family=Montserrat:wght@100&family=Nosifer&family=Playpen+Sans:wght@100&family=Roboto+Slab:wght@200&display=swap');
+
+body{
+    display: flex;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    flex-direction: column;
+    background-image:url("https://img.freepik.com/fotos-premium/fondo-mosaico-tejido-cesta_962764-84090.jpg") ;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+header{
+    background-color: black;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: baseline;
+}
+.imagen-1{
+    width: 100px;
+    height: 94px;
+    margin: 20px;
+}
+.content-1{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+.content-2{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+.content-3{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.text-1{    
+    font-family: 'Nosifer';
+    font-size: 50px;
+}
+.link-1,.link-2{
+    text-decoration: none;
+    color: white;
+}
+.link-2{
+    margin-right: 5%;
+}
+.text-2,.text-3{
+    font-family: 'Playpen Sans';
+    font-size: 20px;
+    
+}
+.f{
+    min-height: 50vh;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(253, 252, 252, 0.699);
+    padding: 15px;
+    border-radius: 15px;
+    border: 3px solid rgba(136, 136, 136, 0.664);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 35px;
+    align-items: center;
+    
+}
+.question{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    background-color: rgba(255, 255, 255, 0.789);
+    backdrop-filter: blur(80px);
+    border-radius: 10px;
+    padding: 10px;
+}
+.question-4{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgba(127, 125, 125, 0.789);
+    backdrop-filter: blur(80px);
+    border-radius: 10px;
+    padding: 40px;
+}
+.imagen-2{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 1px solid black;
+    background-color: white;
+    overflow: hidden;
+    align-items: center;    
+    margin-right: 75px;
+    justify-content: left;
+}
+.imagen-4{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid black;
+    align-items: center;    
+    margin-right: 25px;
+    justify-content: left;
+}
+.question-2{
+    display: flex;
+    justify-content: left;
+    flex-direction:column ;
+    width: 80%;
+
+}
+.question-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    backdrop-filter: blur(80px);
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.img-1{
+    width: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    height: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    object-fit: contain;
+}
+.img-2{
+    width: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    height: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    object-fit: contain;
+}
+.box{
+    height: 30px;
+    width: 300px;
+    border-style: hidden;
+    border-bottom-width:1px ;
+    border-bottom-style: ridge;
+    border-bottom-color:black ;
+}
+.title{
+    font-family: 'Agbalumo';
+}
+.text-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+#submit{
+    border-radius: 10px;
+    width: 100px; 
+}
+#submit:hover{
+    border-radius: 10px;
+    width: 100px;
+    background-color: rgb(0, 149, 255);
+}
+.pregunta{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.789);
+    border: 2px solid black;
+    backdrop-filter: blur(80px);
+    border-radius: 10px;
+}
+.title-1{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Agbalumo';
+    text-align: center;
+}
+.image-4{
+    width: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    height: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    object-fit: contain;
+}
+.image-3{
+    width: 100%; /* Establece el ancho deseado del contenedor */
+    height: 400px; /* Establece la altura deseada del contenedor */
+    border: 1px solid #ccc; /* Añade un borde al contenedor para mayor visibilidad */
+    overflow: hidden;
+}
+.responder{
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.button-1{
+    width: 85px;    
+    height: 25px;
+    background-color: aliceblue;
+    border-style: hidden;
+}
+.button-1:hover{
+    background-color: rgb(0, 149, 255);
+}
+.button-2{
+    width: 115px;    
+    height: 25px;
+    background-color: white;
+    border-style: hidden;
+}
+.button-2:hover{
+    background-color: rgb(0, 149, 255);
+}
+.button-3{
+    width: 100%;    
+    height: 25px;
+    background-color: white;
+    border-style: hidden;
+}
+.button-3:hover{
+    background-color: rgb(0, 149, 255);
+}
+.title-2{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+    font-family: 'Agbalumo';
+    text-align: center;
+    overflow: hidden;
+    margin: 3px;
+    border: 1px solid black;
+}
+.imagen-3{
+    width: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    height: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    object-fit: contain;
+    margin: 3px;
+}
+.text-4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(98, 143, 240);;
+    align-items: center;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.img-5{
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+}
+.regreso{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+.img-4{
+    width: 25px;
+    height: 25px;
+}
+.button-5{
+    background-color: rgba(240, 248, 255, 0);
+    border-style: hidden;
+}
+.img-3{
+    width: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    height: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    object-fit: contain;
+}
+.imagen-5{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius:17.5px;
+    border: 1px solid black;
+    background-color: white;
+    overflow: hidden;
+    align-items: center;    
+    margin-right: 15px;
+    justify-content: left;
+}
+.text-6{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    border-style: hidden;
+    border-bottom-width:1px;
+    border-bottom-color: black;
+    border-bottom-style: dashed;
+    border-radius: 20px;
+}
+.respuesta-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.respuesta-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    left: 50px;
+}
+.left-2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    left: 95px;
+}
+.left-3{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    align-items: center;
+    background-color: white;
+}
+.left-4{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    align-items: center;
+    background-color: rgb(77, 165, 228);
+}
+.text-7{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    border-style: hidden;
+    border-bottom-width:1px;
+    border-bottom-color: black;
+    border-bottom-style: dashed;
+    border-radius: 20px;
+    width: 100%;
+}
+.text-8{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(77, 165, 228);
+    align-items: center;
+    border-style: hidden;
+    border-bottom-width:1px;
+    border-bottom-color: black;
+    border-bottom-style: dashed;
+    border-radius: 20px;
+    width: 100%;
+}
+h3{
+    color: white;
+    font-family: Arial;
+}
+.box-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:center;
+}
+.text-5{
+    color: white;
+    font-family: Arial;
+}
+.tex1{
+    width: 300px;
+    height: 30px;
+    border-style: hidden;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.799);
+}
+.enlace{
+    text-decoration: none;
+    color: rgb(0, 115, 255);
+}
+.error{
+    color: red;
+}
+
+footer{
+    display: flex;
+    background-color: rgb(3, 3, 3);
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
