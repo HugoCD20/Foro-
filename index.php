@@ -28,7 +28,7 @@
         </div>
     </header>
     <main>
-        <form action="pro-pregunta.php" method="post" enctype="multipart/form-data">
+        <form style="width:100%;" action="pro-pregunta.php" method="post" enctype="multipart/form-data">
         <div class="question"> 
         <?php         
             if(isset($_SESSION['id'])){
@@ -43,8 +43,8 @@
            
             <div class="question-2">
                 <div class="title"><h2>Has una pregunta!!</h2></div>
-                <div class="text-box"><div><input class="box" type="text" name="pregunta"></div>
-                <div class="adjuntar"><input type="file" name="Foto" accept="image/*"></div></div>     
+                <div class="text-box"><div style="width:75%;"><input class="box" type="text" name="pregunta"></div>
+                <div style="width:25%;"><input type="file" name="Foto" accept="image/*"></div></div>     
                 <?php 
                 if(isset($_SESSION['id'])){
                     echo "<div class='enviar'><input type='submit' value='Enviar' id='submit'></div>";

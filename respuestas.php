@@ -79,7 +79,7 @@
     ?>
      <div class="regreso"><a href="index.php"><img class="img-5" src="https://img.freepik.com/psd-gratis/diseno-flechas-degradado_23-2150390286.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1699488000&semt=ais"></a></div>
     </div>
-    <form action="enviar-respuesta.php" method="post" enctype="multipart/form-data">
+    <form  action="enviar-respuesta.php" method="post" enctype="multipart/form-data">
         <div class="question-3"> 
         <?php         
         
