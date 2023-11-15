@@ -76,7 +76,7 @@
                  $stmt2->execute();
                 $registro2 = $stmt2->fetch(PDO::FETCH_ASSOC);
                 echo "<form  action='responder.php' method='POST'>";
-                echo "<div class='text-4'><div class='respuesta-1'><div class='imagen-5'> <img class='img-3' src='$registro2[foto]'></div> 
+                echo "<div class='text-4'><div class='respuesta-1'><div class='marco-imagen'><div class='imagen-5'> <img class='img-3' src='$registro2[foto]'></div></div> 
                 <div class='respuesta-2'><p><strong>".$registro2['nombreU']."</strong><br>".$registro['respuesta']."</p></div></div>";
                 if(isset($_SESSION['id'])){echo "<button class='button-1'>Responder↴</button></div> ";
                 }else{
@@ -127,32 +127,32 @@ function mostrarRespuestas($conexion, $id_pregunta, $id_respuesta = null,$nombre
         $id_pagina="Pagina2";
         echo "<form  action='responder.php' method='POST'>";
         if($interfaz1){
-            echo "<div class='text-7'><div class='left-3'><div class='respuesta-1'><div class='imagen-5'>
-        <img class='img-3' src='$registro2[foto]'></div>
+            echo "<div class='text-7'><div class='respuesta-1'><div class='marco-imagen'><div class='imagen-5'>
+        <img class='img-3' src='$registro2[foto]'></div></div>
         <p><strong>".$registro2['nombreU']."</strong> ➱ ".$nombre2."<br>". $registro['respuesta'] . "</p></div>";
         if(isset($_SESSION['id'])){
             if($_SESSION['id']== $id_usuario){
-                echo "<button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='https://cdn.pixabay.com/photo/2019/08/11/18/58/icon-4399697_1280.png'></button></div>
+                echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='https://cdn.pixabay.com/photo/2019/08/11/18/58/icon-4399697_1280.png'></button></div>
                 <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='https://cdn-icons-png.flaticon.com/512/980/980403.png'></button></div></div></div>  ";
         }else{
-            echo "<button class='button-1'name='accion' value='insertar'>Responder↴</button></div></div>";
+            echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button></div></div>";
         }
         }else{
-            echo "</div></div>";
+            echo "</div>";
         } 
         }else{
-            echo "<div class='text-8'><div class='left-4'><div class='respuesta-1'><div class='imagen-5'>
-        <img class='img-3' src='$registro2[foto]'></div>
+            echo "<div class='text-8'><div class='respuesta-1'><div class='marco-imagen'><div class='imagen-5'>
+        <img class='img-3' src='$registro2[foto]'></div></div>
         <p><strong>".$registro2['nombreU']."</strong> ➱ ".$nombre2."<br>". $registro['respuesta'] . "</p></div>";
         if(isset($_SESSION['id'])){
             if($_SESSION['id']== $id_usuario){
-                echo "<button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='https://cdn.pixabay.com/photo/2019/08/11/18/58/icon-4399697_1280.png'></button></div>
+                echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='https://cdn.pixabay.com/photo/2019/08/11/18/58/icon-4399697_1280.png'></button></div>
                 <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='https://cdn-icons-png.flaticon.com/512/980/980403.png'></button></div></div></div>  ";
         }else{
-            echo "<button class='button-1'name='accion' value='insertar'>Responder↴</button></div></div>";
+            echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button></div></div>";
         }
         }else{
-            echo "</div></div>";
+            echo "</div>";
         } 
         }        
         echo "<input type='hidden' name='id-respusta' value='".$registro['id']. "'>";

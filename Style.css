@@ -80,6 +80,7 @@ main{
     align-items: center;
     background-color: rgba(255, 255, 255, 0.789);
     backdrop-filter: blur(80px);
+    
     border-radius: 10px;
     padding: 10px;
 }
@@ -93,19 +94,26 @@ main{
     border-radius: 10px;
     padding: 10px;
 }
-.imagen-2{
+.imagen-2 {
     display: flex;
     width: 80px;
     height: 80px;
     border-radius: 40px;
-    flex-wrap: nowrap;
-    border: 1px solid black;
     background-color: white;
     overflow: hidden;
-    align-items: center;    
+    align-items: center;
     margin-right: 2%;
     justify-content: center;
 }
+
+.img-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%; /* Make the image responsive */
+    max-height: 100%; /* Optionally set a maximum height */
+}
+
 .img-4{
     width: 25px;
     height: 25px;
@@ -155,11 +163,7 @@ main{
     border-radius: 10px;
     padding: 10px;
 }
-.img-1{
-    width: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
-    height: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
-    object-fit: contain;
-}
+
 .img-2{
     width: 60px;
     height: 60px;
@@ -179,7 +183,7 @@ main{
 }
 .text-box{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
     margin-bottom: 5px;
@@ -300,3 +304,5 @@ footer{
     margin-top: 10px;
     width: 100%;
 }
+/* Agrega esto al final de tu CSS existente */
+

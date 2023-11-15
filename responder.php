@@ -59,7 +59,7 @@
                 echo "<form  action='respuestas.php' method='POST'>";
                 echo "<div class='pregunta'>";
                 echo " <div class='title-1'><div class='title-2'><img class='imagen-3' src='$registro2[foto]'></div>";
-                echo "<div class='text-4'><p>".$registro['pregunta']."</p></div> </div>";
+                echo "<div class='text-10'><p>".$registro['pregunta']."</p></div> </div>";
                 if($registro['foto']!='sin-imagen'){
                     echo "<div class='image-3'><img class='image-4' src='$registro[foto]'></div>";
                     }
@@ -91,7 +91,7 @@
         $registro = array();
         if ($stmt->rowCount() > 0) {
             while ($registro = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                echo "<div class='text-4'>  <p>".$registro['respuesta']."</div> ";
+                echo "<div class='text-10'>  <p>".$registro['respuesta']."</div> ";
                 echo "<input type='hidden' name='id-respusta' value='".$registro['id']. "'>";           
                 echo "<input type='hidden' name='id-pregunta' value='".$id_pregunta. "'>";  
                 
@@ -115,7 +115,7 @@
             }  
             echo '<div class="question-2">';
             echo '<div class="title"><h2>Responder!!</h2></div>';
-            echo '   <div class="text-box"><div><input class="box" type="text" name="pregunta"></div>';
+            echo '   <div class="text-box"><div style="width:75%; margin-right:2%;"><input class="box" type="text" name="pregunta"></div>';
             echo '  <div class="enviar"><input type="submit" value="Responder" id="submit"></div></div>';
             echo "<input type='hidden' name='id-pregunta' value=' $id_pregunta'>";
             echo "<input type='hidden' name='id-respuesta' value=' $id_respuesta'>";

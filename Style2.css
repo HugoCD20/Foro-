@@ -109,9 +109,8 @@ main{
     height: 60px;
     border-radius: 30px;
     overflow: hidden;
-    border: 1px solid black;
     align-items: center;    
-    margin-right: 25px;
+    margin-right: 2%;
     justify-content: left;
 }
 .question-2{
@@ -127,7 +126,6 @@ main{
     justify-content: left;
     align-items: center;
     backdrop-filter: blur(80px);
-    width: 100%;
     border-radius: 10px;
     padding: 10px;
 }
@@ -139,11 +137,13 @@ main{
 .img-2{
     width: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
     height: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
+    max-width: 100%; /* Make the image responsive */
+    max-height: 100%; /* Optionally set a maximum height */
     object-fit: contain;
 }
 .box{
     height: 30px;
-    width: 300px;
+    width: 100%;
     border-style: hidden;
     border-bottom-width:1px ;
     border-bottom-style: ridge;
@@ -156,6 +156,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
     margin-bottom: 5px;
 }
 #submit{
@@ -202,9 +203,9 @@ main{
     width: 100%;
 }
 .button-1{
-    width: 85px;    
+    width: 85px;
     height: 25px;
-    background-color: aliceblue;
+    background-color: #f0f8ff00;
     border-style: hidden;
 }
 .button-1:hover{
@@ -245,10 +246,16 @@ main{
     object-fit: contain;
     margin: 3px;
 }
+.marco-imagen{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
 .text-4{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     background-color: rgb(98, 143, 240);;
     align-items: center;
@@ -285,12 +292,16 @@ main{
     width: 35px;
     height: 35px;
     border-radius:17.5px;
-    border: 1px solid black;
-    background-color: white;
     overflow: hidden;
     align-items: center;    
     margin-right: 15px;
     justify-content: left;
+}
+.contenedor-botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30%;
 }
 .text-6{
     display: flex;
@@ -309,11 +320,15 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 70%
 }
 .respuesta-2{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: justify;
+    width: 80%;
     align-items: center;
+    justify-content: start;
 }
 .left-1{
     position: relative;
@@ -331,20 +346,13 @@ main{
     background-color: white;
     left: 95px;
 }
-.left-3{
+.text-10{
     display: flex;
-    flex-direction: row;
-    width: 400px;
-    align-items: center;
-    background-color: white;
+    justify-content: center;
+    background-color: cadetblue;
+    width: 100%;
 }
-.left-4{
-    display: flex;
-    flex-direction: row;
-    width: 400px;
-    align-items: center;
-    background-color: rgb(77, 165, 228);
-}
+
 .text-7{
     display: flex;
     flex-direction: row;
@@ -357,6 +365,7 @@ main{
     border-bottom-style: dashed;
     border-radius: 20px;
     width: 100%;
+    /**/
 }
 .text-8{
     display: flex;

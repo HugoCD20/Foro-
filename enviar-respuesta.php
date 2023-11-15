@@ -10,6 +10,11 @@ session_start();
                 header("location: http://localhost/twitter/respuestas.php");
                 exit();
             }
+            if(strlen($respuesta)>500){
+                $_SESSION['error2']='La respuesta es demasiada larga';
+                header("location: http://localhost/twitter/respuestas.php");
+                exit();
+            }
             $id_usuario=$_SESSION['id'];
             $consulta = "INSERT INTO respuestas (id_pregunta,id_respuesta,id_usuario,respuesta) 
                          VALUES (:id_pregunta,:id_respuesta,:id_usuario,:respuesta)";

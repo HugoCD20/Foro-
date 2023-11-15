@@ -40,7 +40,16 @@ session_start();
         try {
             include('conexion.php');
             $pregunta = $_POST['pregunta'];
+            if(strlen($pregunta)>500){
+                $_SESSION['error']='La pregunta es demasiada larga';
+                header("location: http://localhost/twitter/index.php");
+                exit();
+            }
             $idU=$_SESSION['id'];
+            if($pregunta==null){
+                header("location: http://localhost/twitter/index.php");
+                exit();
+            }
             $consulta = "INSERT INTO Preguntas (id_usuario,Pregunta,foto) 
                          VALUES (:idU,:pregunta,:imagen)";
             $stmt = $conexion->prepare($consulta);

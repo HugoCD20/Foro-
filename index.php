@@ -28,12 +28,17 @@
         </div>
     </header>
     <main>
-        <form style="width:100%;" action="pro-pregunta.php" method="post" enctype="multipart/form-data">
-        <div class="question"> 
+        <?php 
+            if(isset($_SESSION['id'])){
+        echo '<form style="width:100%;" action="pro-pregunta.php" method="post" enctype="multipart/form-data">';
+        }
+            ?>
+        <div <?php if(!isset($_SESSION['id'])){echo "style='width:100%;'";}?>class="question"> 
         <?php         
             if(isset($_SESSION['id'])){
                 $imagen=$_SESSION["imagen"];
-                echo "<div class='imagen-2'> <img class='img-1' src='$imagen'></div>";
+                echo "<div class='imagen-2'> <img class='img-1' src='$imagen' alt='Profile Picture'></div>";
+
 
                 
             }else{
@@ -44,12 +49,12 @@
             <div class="question-2">
                 <div class="title"><h2>Has una pregunta!!</h2></div>
                 <div class="text-box"><div style="width:75%;"><input class="box" type="text" name="pregunta"></div>
-                <div style="width:25%;"><input type="file" name="Foto" accept="image/*"></div></div>     
+                <div style="width:100%; margin-top:5px ;"><input style="width:100%;" type="file" name="Foto" accept="image/*"></div></div>     
                 <?php 
                 if(isset($_SESSION['id'])){
                     echo "<div class='enviar'><input type='submit' value='Enviar' id='submit'></div>";
                     if(isset($_SESSION['error'])){
-                        echo $_SESSION['error'];
+                        echo "<center> <p class='error'>$_SESSION[error]</p> </center>";
                         $_SESSION['error']=null;
                     }
                     
@@ -60,7 +65,11 @@
                 
             </div>
         </div>
-    </form>
+        <?php 
+            if(isset($_SESSION['id'])){
+            echo "</form>";
+            }
+        ?>
     <div class="content-3">
     <?php 
      try {
