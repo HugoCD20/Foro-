@@ -3,7 +3,7 @@ session_start();
      if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $id=$_SESSION['id'];
         $ima = true;
-$imagen = '';
+        $imagen = '';
 
 if(isset($_FILES['Foto']) && $_FILES['Foto']['error'] === UPLOAD_ERR_OK){
     $file = $_FILES['Foto'];
@@ -50,7 +50,14 @@ if(isset($_FILES['Foto']) && $_FILES['Foto']['error'] === UPLOAD_ERR_OK){
             $nombreU = $_POST['usuario'];           
             $correo = $_POST['Correo'];
             $contra = $_POST['Contra'];
-            if ($ima) {
+            if(strlen($nombreU)>100 or strlen($correo)>100 or strlen($contra)>100){
+                header("location:http://localhost/twitter/actualizar-perfil.php");
+                exit();
+                $largo=false;
+            }else{
+                $largo=true;
+            }
+            if ($ima && $largo) {
                 $consulta = "UPDATE registro SET foto=:imagen WHERE id=:id";
                 $stmt2 = $conexion->prepare($consulta);
                 $stmt2->bindParam(':imagen', $imagen);

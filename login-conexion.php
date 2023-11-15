@@ -3,7 +3,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     session_start();
     $Contraseña = $_POST['Contraseña'];
     $Correo = $_POST['Nusuario'];
-    if(!empty($Contraseña) && !empty($Correo)){
+    if(strlen($Contraseña)>100 && strlen($Correo)>100){
+        $largo=false;
+    }else{
+        $largo=true;
+    }
+    if(!empty($Contraseña) && !empty($Correo) && $largo){
         try {
             include("conexion.php");
             $correo = $_POST['Nusuario'];

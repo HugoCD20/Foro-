@@ -38,6 +38,9 @@ if(isset($_SESSION['id'])){
                         if(empty($Nusuario)){
                             echo '<center> <p class="error">Coloca un nombre de usuario</p> </center>';
                         }
+                        if(strlen($Nusuario)>100){
+                            echo '<center> <p class="error">Nombre de usuario demasiado largo</p> </center>';
+                        }
                     }
             ?>     
             <div class="box-2">
@@ -51,6 +54,15 @@ if(isset($_SESSION['id'])){
                         if(empty($Correo)){
                             echo '<center> <p class="error">Coloca un correo</p> </center>';
                         }
+                        if(strlen($Correo)>100){
+                            echo '<center> <p class="error">Correo electronico demasiado largo</p> </center>';
+                        }
+
+                        // Filtrar el correo electrónico usando filter_var
+                        $correoFiltrado = filter_var($Correo, FILTER_VALIDATE_EMAIL);                        
+                        if ($correoFiltrado == false) {
+                            echo '<center> <p class="error">Correo no valido</p> </center>';
+                        } 
                             
                     }
             ?>
@@ -60,11 +72,14 @@ if(isset($_SESSION['id'])){
             </div>
             <?php 
                     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-                        $Contrasela=$_POST['Contraseña'];
+                        $Contraseña=$_POST['Contraseña'];
                         if(empty($Contraseña)){
                             echo '<center> <p class="error">Coloca una contraseña</p> </center>';
-                        }elseif(strlen($contraseña)<3){
+                        }elseif(strlen($Contraseña)<3){
                             echo '<center> <p class="error">Contraseña demasiado corta</p> </center>';
+                        }
+                        if(strlen($Contraseña)>100){
+                            echo '<center> <p class="error">Contraseña demasiada larga</p> </center>';
                         }
                     }
             ?>

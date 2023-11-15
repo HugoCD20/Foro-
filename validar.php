@@ -5,9 +5,13 @@
     $Contra = $_POST['Contra'];
     $Nusuario = $_POST['Nusuario'];
     $valida = true;
-
     if ($Contraseña != $Contra) {
         $valida = false;
+    }
+    if(strlen($Nusuario)>100 && strlen($Correo)>100 && strlen($Contraseña)>100){
+        $largo=false;
+    }else{
+        $largo=true;
     }
 
     $ima = true;
@@ -54,8 +58,14 @@
     if (!$ima) {
         $ima=false;
     }
+    $correoFiltrado = filter_var($Correo, FILTER_VALIDATE_EMAIL);                        
+    if ($correoFiltrado == false) {
+        $cor=false;
+    }else{
+        $cor=true;
+    }
 
-    if(!empty($Correo) && !empty($Contraseña) && !empty($Contra) && !empty($Nusuario) && $valida==true && $cor==true && $ima==true){
+    if(!empty($Correo) && !empty($Contraseña) && !empty($Contra) && !empty($Nusuario) && $valida && $cor && $ima && $largo){
        
         try {
             include('conexion.php');

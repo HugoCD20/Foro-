@@ -38,17 +38,23 @@ if(isset($_SESSION['id'])){
                         if(empty($Nusuario)){
                             echo '<center> <p class="error">Coloca un nombre de usuario</p> </center>';
                         }
+                        if(strlen($Nusuario)>100){
+                            echo '<center> <p class="error">EL nombre de usuario no es valido</p> </center>';
+                        }
                     }
             ?>     
             <div class="box-2">
                 <div class="nomb"><p class="text-5">Contraseña:</p> 
-                    <input class="tex1" id="enlace1" type="password" name="Contraseña" required placeholder="Contraseña"> </div>
+                    <input class="tex1" id="enlace1" type="password" name="Contraseña"  placeholder="Contraseña"> </div>
             </div>
             <?php 
                     if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         $Contraseña=$_POST['Contraseña'];
                         if(empty($Contraseña)){
                             echo '<center> <p class="error">Coloca una contraseña</p> </center>';
+                        }
+                        if(strlen($Contraseña)>100){
+                            echo '<center> <p class="error">La contraseña no es valida</p> </center>';
                         }
                     
                     }
