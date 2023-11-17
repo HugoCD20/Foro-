@@ -68,7 +68,7 @@ if(isset($_SESSION['id'])){
             }
             ?>
            </form>
-           <a class="enlace"  href="Register.php"><center><p>No tengo una cuenta </p></center></a>
+           <a class="enlace"  href="Register.php"><center><p class="cuenta">No tengo una cuenta </p></center></a>
         </div>
     </main>
     <div class="f"></div>

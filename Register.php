@@ -116,10 +116,11 @@ if(isset($_SESSION['id'])){
                 ?>
             </div>
            </form>
-           <a class="enlace"  href="login.php"><center><p>Ya tengo una cuenta</p></center></a>
+           <a class="enlace"  href="login.php"><center><p class="cuenta">Ya tengo una cuenta</p></center></a>
        
         </div>
     </main>
+    <div class="f"></div>
     <footer><h3>Elaborado por Hugo David Nogueda Hernández</h3></footer>
 </body>
 </html>

@@ -30,10 +30,11 @@
     <main>
         <?php 
             if(isset($_SESSION['id'])){
-        echo '<form style="width:100%;" action="pro-pregunta.php" method="post" enctype="multipart/form-data">';
+        echo '<form class="form-1" action="pro-pregunta.php" method="post" enctype="multipart/form-data">';
         }
             ?>
-        <div <?php if(!isset($_SESSION['id'])){echo "style='width:100%;'";}?>class="question"> 
+        <div <?php if(!isset($_SESSION['id'])){echo "style='width:100%;'";}?>class="question">
+        <div class="marco">
         <?php         
             if(isset($_SESSION['id'])){
                 $imagen=$_SESSION["imagen"];
@@ -44,12 +45,13 @@
             }else{
                 echo "<div class='imagen-2'> <img class='img-1' src='https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png'></div>";
             }
-            ?>    
+            ?>  
+            </div>  
            
             <div class="question-2">
                 <div class="title"><h2>Has una pregunta!!</h2></div>
                 <div class="text-box"><div style="width:75%;"><input class="box" type="text" name="pregunta"></div>
-                <div style="width:100%; margin-top:5px ;"><input style="width:100%;" type="file" name="Foto" accept="image/*"></div></div>     
+                <div style="width:100%; margin-top:5px ;"><input class="inputs" style="width:100%;" type="file" name="Foto" accept="image/*"></div></div>     
                 <?php 
                 if(isset($_SESSION['id'])){
                     echo "<div class='enviar'><input type='submit' value='Enviar' id='submit'></div>";

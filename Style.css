@@ -21,6 +21,9 @@ header{
     color: white;
     justify-content: baseline;
 }
+.form-1{
+    width: 100%;
+}
 .imagen-1{
     width: 100px;
     height: 94px;
@@ -60,6 +63,13 @@ header{
 .f{
     min-height: 50vh;
 }
+.marco{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -96,9 +106,9 @@ main{
 }
 .imagen-2 {
     display: flex;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
     background-color: white;
     overflow: hidden;
     align-items: center;
@@ -223,7 +233,6 @@ main{
     text-align: center;
     overflow: hidden;
     margin: 3px;
-    border: 1px solid black;
 }
 .imagen-3{
     width: 100%; /* Garantiza que la imagen ocupe el 100% del contenedor */
@@ -304,5 +313,195 @@ footer{
     margin-top: 10px;
     width: 100%;
 }
-/* Agrega esto al final de tu CSS existente */
 
+@media (min-width: 280px) and (max-width: 767px) {
+
+    .content-1{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    }
+    .content-2 {
+        width: 50%;
+    }
+
+    .imagen-1 {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 20px;
+    }
+    .tex1{
+        width: 100%;
+        height: 1.5rem;
+    }
+    .text-1 {
+        font-size: 1rem;
+    }
+    .box-2{
+        font-size: 0.5rem;
+    }
+    .text-2,.text-3,.text-5{
+        font-size: 0.7rem;
+    }
+    .text-4{
+        font-size: 0.6rem;
+    }
+
+    .link-2 {
+        margin-right: 0;
+    }
+    .envio{
+        font-size: 0.5rem;
+    }
+    .cuenta{
+        font-size: 0.5rem;
+    }
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .question {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+
+    .imagen-2 {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2rem;
+    }
+    h2{
+        font-size: 0.9rem;
+
+    }
+    .box{
+        height: 0.8rem;
+    }
+    .inputs{
+        font-size: 0.5rem;
+    }
+
+    .question-2 {
+        width: 100%;
+    }
+    .error{
+        color: red;
+        font-size: 0.5rem;
+    }
+
+    .question-3 {
+        flex-direction: column;
+    }
+
+    .image-3 {
+        height: auto;
+    }
+    .img-4{
+        width: 1rem;
+        height: 1rem;
+    }
+    #submit{
+        width: 4rem;
+        font-size: 0.5rem;
+    }
+    .form-1{
+        width: 100%;
+        margin-right: 5%;
+    }
+    .pregunta {
+        margin-top: 10px;
+    }
+
+    .title-1 {
+        overflow: visible;
+    }
+
+    .title-2 {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+    }
+
+
+    .button-1 {
+        height: 100%;
+        font-size: 0.6rem;
+        border-style: hidden;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .content-1,
+    .content-2 {
+        width: 80%;
+    }
+    .form-1{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .imagen-1 {
+        width: 4rem;
+         height: 3.5rem;
+    }
+
+    .text-1 {
+        font-size: 2rem;
+    }
+
+    .link-2 {
+        margin-right: 0;
+    }
+
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .question {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+
+    .imagen-2 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .question-2 {
+        width: 100%;
+    }
+
+    .question-3 {
+        flex-direction: column;
+    }
+
+    .image-3 {
+        height: auto;
+    }
+
+    .pregunta {
+        margin-top: 10px;
+    }
+
+    .title-1 {
+        overflow: visible;
+    }
+
+    .title-2 {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+    }
+
+    .button-1 {
+        height: 40px;
+    }
+}
