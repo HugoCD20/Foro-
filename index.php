@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="content-1"><img class="imagen-1" src="https://prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/5726/assets/73418/large_doctoralia-mktpl-symbol-turquoise.png">
+        <div class="content-1"><img class="imagen-1" src="img/logo[1].png">
             <h1 class="text-1">Doom</h1></div>
         <div class="content-2">
             <?php session_start();             
@@ -19,7 +19,7 @@
                 $nombre=$_SESSION['nombre'];
                 echo "<a class='link-2' href='Cerrar-sesion.php'><p class='text-3'>Cerrar Sesion</p></a>";
                 $imagen=$_SESSION["imagen"];
-                echo "<a href='actualizar-perfil.php'><div class='imagen-2'> <img class='img-1' src='$imagen'></div></a>";
+                echo "<a class='xa' href='actualizar-perfil.php'><div class='imagen-2'> <img class='img-1' src='$imagen'></div></a>";
                 $_SESSION["id_pregunta"]=null; 
                 
             }
@@ -43,7 +43,7 @@
 
                 
             }else{
-                echo "<div class='imagen-2'> <img class='img-1' src='https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png'></div>";
+                echo "<div class='imagen-2'> <img class='img-1' src='img/default.jpg'></div>";
             }
             ?>  
             </div>  
@@ -95,7 +95,7 @@
                 echo "<div class='text-4'><p>".$registro['pregunta']."</p></div> ";
                 if(isset($_SESSION['id'])){
                     if($_SESSION['id']== $id_usuario){
-                        echo "<div class='botones'><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='https://cdn-icons-png.flaticon.com/512/980/980403.png'></button></div></div>";
+                        echo "<div class='botones'><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='img/equis.png'></button></div></div>";
                 }else{
                     echo "</div>";
                 }

@@ -49,7 +49,7 @@
                 $ima = false;
             }
         } else {
-            $imagen = 'https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png';
+            $imagen = 'img/default.jpg';
         }
     } else {
         $ima = true;
@@ -80,7 +80,7 @@
             $stmt->bindParam(':contrasena', $contrasena);
             $stmt->bindParam(':imagen', $imagen);
             $stmt->execute();
-            header("location: http://localhost/twitter/login.php");
+            header("location: login.php");
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
         }
@@ -89,7 +89,7 @@
         
     } 
 }else{
-    header("location: http://localhost/twitter/index.php");
+    header("location: index.php");
 }
     
 ?>

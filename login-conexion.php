@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     $_SESSION['id']=$registro['id'];
                     $_SESSION['nombre']=$registro['nombreu'];
                     $_SESSION["imagen"]=$registro['foto'];
-                    header("location:http://localhost/twitter/index.php");
+                    header("location:index.php");
                 }
             } else {
                 echo '<center> <p class="error">Contraseña o correo electrónico incorrectos</p> </center>';
@@ -33,6 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
 }else{
-    header("location:http://localhost/twitter/index.php");
+    header("location:index.php");
 }
 ?>

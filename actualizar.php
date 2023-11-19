@@ -17,8 +17,8 @@
     $stmt4->execute();
     $_SESSION["id_pregunta"]=$id_pregunta; 
     if($id_pagina=='pagina2'){
-        header("location: http://localhost/twitter/mostrar-respuestas.php");
+        header("location: mostrar-respuestas.php");
     }else{
-        header("location: http://localhost/twitter/respuestas.php");
+        header("location: respuestas.php");
     }
 ?>

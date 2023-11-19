@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="content-1"><img class="imagen-1" src="https://prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/5726/assets/73418/large_doctoralia-mktpl-symbol-turquoise.png">
+        <div class="content-1"><img class="imagen-1" src="img/logo[1].png">
             <h1 class="text-1">Doom</h1></div>
         <div class="content-2">
         <?php session_start();             
@@ -18,7 +18,7 @@
             }else{
                 echo '<a class="link-2" href="index.php"><p class="text-3">Home</p></a>'; 
                 $imagen=$_SESSION["imagen"];
-                echo "<div class='imagen-2'> <img class='img-1' src='$imagen'></div>";
+                echo "<a class='xa' href='actualizar-perfil.php'><div class='imagen-2'> <img class='img-1' src='$imagen'></div></a>";
                 
             }
             ?>               

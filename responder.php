@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="content-1"><img class="imagen-1" src="https://prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/5726/assets/73418/large_doctoralia-mktpl-symbol-turquoise.png">
+        <div class="content-1"><img class="imagen-1" src="img/logo[1].png">
             <h1 class="text-1">Doom</h1></div>
         <div class="content-2">
         <?php session_start();             
@@ -18,7 +18,7 @@
             }else{
                 echo '<a class="link-2" href="index.php"><p class="text-3">Home</p></a>'; 
                 $imagen=$_SESSION["imagen"];
-                echo "<div class='imagen-2'> <img class='img-1' src='$imagen'></div>";
+                echo "<a class='xa' href='actualizar-perfil.php'><div class='imagen-2'> <img class='img-1' src='$imagen'></div></a>";
                 
             }
             ?>              
@@ -76,7 +76,7 @@
     ?>
     </div>
     <div class="question-4">
-    <div class="regreso"><a href="respuestas.php"><img class="img-5" src="https://img.freepik.com/psd-gratis/diseno-flechas-degradado_23-2150390286.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1699488000&semt=ais"></a></div>
+    <div class="regreso"><a href="respuestas.php"><img class="img-5" src="img/flecha.png"></a></div>
     <?php     
     $id_respuesta=$_POST['id-respusta'];
      if($accion=="insertar" || $accion=="actualizar"){
@@ -111,7 +111,7 @@
                 $imagen=$_SESSION["imagen"];
                 echo "<div class='imagen-4'> <img class='img-2' src='$imagen'></div>";             
             }else{
-                echo "<div class='imagen-4'> <img class='img-2' src='https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png'></div>";
+                echo "<div class='imagen-4'> <img class='img-2' src='img/default.jpg'></div>";
             }  
             echo '<div class="question-2">';
             echo '<div class="title"><h2>Responder!!</h2></div>';
@@ -141,7 +141,7 @@
                 $imagen=$_SESSION["imagen"];
                 echo "<div class='imagen-4'> <img class='img-2' src='$imagen'></div>";             
             }else{
-                echo "<div class='imagen-4'> <img class='img-2' src='https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png'></div>";
+                echo "<div class='imagen-4'> <img class='img-2' src='img/default.jpg'></div>";
             }  
             echo '<div class="question-2">';
             echo '<div class="title"><h2>Editar comentario!!</h2></div>';

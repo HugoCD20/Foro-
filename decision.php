@@ -10,10 +10,10 @@
     $_SESSION["id_pregunta"]=$id_pregunta; 
     $_SESSION["realiza"]=$boton;
     if($boton=='responder'){
-        header("location: http://localhost/twitter/respuestas.php");
+        header("location: respuestas.php");
         }elseif($boton=='eliminar'){
-            header("location: http://localhost/twitter/verifica-eliminar.php");
+            header("location: verifica-eliminar.php");
             }else{
-                header("location: http://localhost/twitter/index.php");
+                header("location: index.php");
             }
         ?>

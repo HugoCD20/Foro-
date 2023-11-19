@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="content-1"><img class="imagen-1" src="https://prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/5726/assets/73418/large_doctoralia-mktpl-symbol-turquoise.png">
+        <div class="content-1"><img class="imagen-1" src="img/logo[1].png">
             <h1 class="text-1">Doom</h1></div>
         <div class="content-2">
         <?php session_start();             
@@ -18,7 +18,7 @@
             }else{
                 echo '<a class="link-2" href="index.php"><p class="text-3">Home</p></a>'; 
                 $imagen=$_SESSION["imagen"];
-                echo "<a href='actualizar-perfil.php'><div class='imagen-2'> <img class='img-1' src='$imagen'></div></a>";
+                echo "<a class='xa' href='actualizar-perfil.php'><div class='imagen-2'> <img class='img-1' src='$imagen'></div></a>";
                 
             }
             ?>           
@@ -40,7 +40,7 @@
     }else{
         $id_pregunta= $_POST['id-pregunta'];
         if(!isset($id_pregunta)){
-            header("location: http://localhost/twitter/index.php");
+            header("location: index.php");
         }
     }
      try {
@@ -77,11 +77,11 @@
         echo "Error: " . $e->getMessage();
     }
     ?>
-     <div class="regreso"><a href="index.php"><img class="img-5" src="https://img.freepik.com/psd-gratis/diseno-flechas-degradado_23-2150390286.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1699488000&semt=ais"></a></div>
+     <div class="regreso"><a href="index.php"><img class="img-5" src="img/flecha.png"></a></div>
     </div>
     <?php         
             if(isset($_SESSION['id'])){
-    echo '<form style="width:80%;" action="enviar-respuesta.php" method="post" enctype="multipart/form-data">';
+    echo '<form class="form-1" action="enviar-respuesta.php" method="post" enctype="multipart/form-data">';
 }
     ?>
         <div <?php if(!isset($_SESSION['id'])){ echo "style='width:80%;'";} ?> class="question-3"> 
@@ -93,7 +93,7 @@
 
                 
             }else{
-                echo "<div class='imagen-4'> <img class='img-2' src='https://definicion.de/wp-content/uploads/2019/07/perfil-de-usuario.png'></div>";
+                echo "<div class='imagen-4'> <img class='img-2' src='img/default.jpg'></div>";
             }
             ?>    
            
@@ -149,8 +149,8 @@
                 <div class='respuesta-2'><p><strong>".$registro2['nombreU']."</strong><br>".$registro['respuesta']."</p></div></div>";
                 if(isset($_SESSION['id'])){
                     if($_SESSION['id']== $id_usuario){
-                            echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'> Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='https://cdn.pixabay.com/photo/2019/08/11/18/58/icon-4399697_1280.png'></button></div>
-                            <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='https://cdn-icons-png.flaticon.com/512/980/980403.png'></button></div></div></div> ";
+                            echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'> Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='img/terca.png'></button></div>
+                            <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='img/equis.png'></button></div></div></div> ";
                     }else{
                         echo "<button class='button-1'name='accion' value='insertar'>Responder↴</button></div>";
                 }
@@ -182,8 +182,8 @@
                                         <p><strong>".$registro7['nombreU']."</strong> ➱ ".$registro2['nombreU']."<br>". $registro3['respuesta'] . "</p></div>";
                                         if(isset($_SESSION['id'])){
                                             if($_SESSION['id']== $id_usuario){
-                                                echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='https://cdn.pixabay.com/photo/2019/08/11/18/58/icon-4399697_1280.png'></button></div>
-                                                <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='https://cdn-icons-png.flaticon.com/512/980/980403.png'></button></div></div></div>  ";
+                                                echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='img/terca.png'></button></div>
+                                                <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='img/equis.png'></button></div></div></div>  ";
                                         }else{
                                             echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button></div></div>";
                                         }
@@ -215,8 +215,8 @@
                                         <p><strong>".$registro6['nombreU']."</strong> ➱ ".$registro7['nombreU']."<br>". $registro4['respuesta'] . "</p></div>";
                                         if(isset($_SESSION['id'])){
                                             if($_SESSION['id']== $id_usuario){
-                                                echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='https://cdn.pixabay.com/photo/2019/08/11/18/58/icon-4399697_1280.png'></button></div>
-                                                <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='https://cdn-icons-png.flaticon.com/512/980/980403.png'></button></div></div></div>";
+                                                echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='img/terca.png'></button></div>
+                                                <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='img/equis.png'></button></div></div></div>";
                                         }else{
                                             echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button></div></div>";
                                     }

@@ -51,7 +51,7 @@ if(isset($_FILES['Foto']) && $_FILES['Foto']['error'] === UPLOAD_ERR_OK){
             $correo = $_POST['Correo'];
             $contra = $_POST['Contra'];
             if(strlen($nombreU)>100 or strlen($correo)>100 or strlen($contra)>100){
-                header("location:http://localhost/twitter/actualizar-perfil.php");
+                header("location:actualizar-perfil.php");
                 exit();
                 $largo=false;
             }else{
@@ -95,7 +95,7 @@ if(isset($_FILES['Foto']) && $_FILES['Foto']['error'] === UPLOAD_ERR_OK){
 
             }
             
-            header("location:http://localhost/twitter/index.php");
+            header("location:index.php");
         
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
@@ -103,6 +103,6 @@ if(isset($_FILES['Foto']) && $_FILES['Foto']['error'] === UPLOAD_ERR_OK){
     }
     
 }else{
-    header("location:http://localhost/twitter/index.php");
+    header("location:index.php");
 }
     ?>

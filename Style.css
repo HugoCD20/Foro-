@@ -8,7 +8,7 @@ body{
     border: 0px;
     margin: 0px;
     flex-direction: column;
-    background-image:url("https://img.freepik.com/fotos-premium/fondo-mosaico-tejido-cesta_962764-84090.jpg") ;
+    background-image:url("img/fondo.jpg") ;
     background-attachment: fixed;
     min-height: 100vh;
 }

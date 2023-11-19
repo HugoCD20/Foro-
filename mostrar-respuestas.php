@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="content-1"><img class="imagen-1" src="https://prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/5726/assets/73418/large_doctoralia-mktpl-symbol-turquoise.png">
+        <div class="content-1"><img class="imagen-1" src="img/logo[1].png">
             <h1 class="text-1">Doom</h1></div>
         <div class="content-2">
             <?php session_start();             
@@ -18,7 +18,7 @@
             }else{
                 echo '<a class="link-2" href="index.php"><p class="text-3">Home</p></a>'; 
                 $imagen=$_SESSION["imagen"];
-                echo "<div class='imagen-2'> <img class='img-1' src='$imagen'></div>";
+                echo "<a class='xa' href='actualizar-perfil.php'><div class='imagen-2'> <img class='img-1' src='$imagen'></div></a>";
                 
             }
             ?>           
@@ -28,7 +28,7 @@
     <main>
     
     <div class="question-4">
-    <div class="regreso"><a href="respuestas.php"><img class="img-5" src="https://img.freepik.com/psd-gratis/diseno-flechas-degradado_23-2150390286.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1699488000&semt=ais"></a></div>
+    <div class="regreso"><a href="respuestas.php"><img class="img-5" src="img/flecha.png"></a></div>
     <?php
     $_SESSION['pagina']='pagina2';
     if (isset($_SESSION['id_pregunta'])) {
@@ -132,8 +132,8 @@ function mostrarRespuestas($conexion, $id_pregunta, $id_respuesta = null,$nombre
         <p><strong>".$registro2['nombreU']."</strong> ➱ ".$nombre2."<br>". $registro['respuesta'] . "</p></div>";
         if(isset($_SESSION['id'])){
             if($_SESSION['id']== $id_usuario){
-                echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='https://cdn.pixabay.com/photo/2019/08/11/18/58/icon-4399697_1280.png'></button></div>
-                <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='https://cdn-icons-png.flaticon.com/512/980/980403.png'></button></div></div></div>  ";
+                echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='img/terca.png'></button></div>
+                <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='img/equis.png'></button></div></div></div>  ";
         }else{
             echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button></div></div>";
         }
@@ -146,8 +146,8 @@ function mostrarRespuestas($conexion, $id_pregunta, $id_respuesta = null,$nombre
         <p><strong>".$registro2['nombreU']."</strong> ➱ ".$nombre2."<br>". $registro['respuesta'] . "</p></div>";
         if(isset($_SESSION['id'])){
             if($_SESSION['id']== $id_usuario){
-                echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='https://cdn.pixabay.com/photo/2019/08/11/18/58/icon-4399697_1280.png'></button></div>
-                <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='https://cdn-icons-png.flaticon.com/512/980/980403.png'></button></div></div></div>  ";
+                echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button><div><button class='button-5' name='accion' value='actualizar'><img class='img-4' src='img/terca.png'></button></div>
+                <div><button class='button-5' name='accion' value='eliminar'><img class='img-4' src='img/equis.png'></button></div></div></div>  ";
         }else{
             echo "<div class='contenedor-botones'><button class='button-1'name='accion' value='insertar'>Responder↴</button></div></div>";
         }

@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="content-1"><img class="imagen-1" src="https://prowly-uploads.s3.eu-west-1.amazonaws.com/uploads/5726/assets/73418/large_doctoralia-mktpl-symbol-turquoise.png">
+        <div class="content-1"><img class="imagen-1" src="img/logo[1].png">
             <h1 class="text-1">Doom</h1></div>
         <div class="content-2">
             <?php 
@@ -21,7 +21,7 @@
                 $nombre=$_SESSION['nombre'];
                 echo "<a class='link-2' href='Cerrar-sesion.php'><p class='text-3'>Cerrar Sesion</p></a>";
                 $imagen=$_SESSION["imagen"];
-                echo "<a href='actualizar-perfil.php'><div class='imagen-2'> <img class='img-1' src='$imagen'></div></a>";
+                echo "<a class='xa' href='actualizar-perfil.php'><div class='imagen-2'> <img class='img-1' src='$imagen'></div></a>";
                 $_SESSION["id_pregunta"]=''; 
                 
             }
@@ -30,8 +30,8 @@
         </div>
     </header>
     <main>
-    <div class="contenedor">
-    <div class="regreso"><a href="index.php"><img class="img-5" src="https://img.freepik.com/psd-gratis/diseno-flechas-degradado_23-2150390286.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1699488000&semt=ais"></a></div>
+    <div class="regreso"><a href="index.php"><img class="img-5" src="img/flecha.png"></a></div>
+    <div class="contenedor">    
         <form method='post' action='realiza-actualizacion.php' enctype="multipart/form-data">
         <div class="box-2"><h2 class="text-5">Actualizar Perfil.</h2></div>
         <div class='box-2'>

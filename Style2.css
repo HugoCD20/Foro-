@@ -8,7 +8,7 @@ body{
     border: 0px;
     margin: 0px;
     flex-direction: column;
-    background-image:url("https://img.freepik.com/fotos-premium/fondo-mosaico-tejido-cesta_962764-84090.jpg") ;
+    background-image:url("img/fondo.jpg") ;
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -105,9 +105,9 @@ main{
 }
 .imagen-4{
     display: flex;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
     overflow: hidden;
     align-items: center;    
     margin-right: 2%;
@@ -266,7 +266,9 @@ main{
 .img-5{
     width: 35px;
     height: 35px;
-    border: 1px solid black;
+}
+.form-1{
+    width: 80%;
 }
 .regreso{
     display: flex;
@@ -420,4 +422,345 @@ footer{
     justify-content: center;
     margin-top: 10px;
     width: 100%;
+}
+@media (max-width: 280px){
+
+    .content-1{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    }
+    .content-2 {
+        width: 50%;
+    }
+    .xa{
+        width: 25%;
+    }
+    .imagen-5{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 0.75rem;
+    }
+    .text-box{
+        flex-direction: column;
+    }
+    .nom{
+        font-size: 0.6rem;
+    }
+    .imagen-1 {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 20px;
+    }
+    .tex1{
+        width: 100%;
+        height: 1.5rem;
+    }
+    .marco-imagen{
+        flex-direction: column;
+    }
+    .text-1 {
+        font-size: 1rem;
+    }
+    .box-2{
+        font-size: 0.5rem;
+    }
+    .img-5{
+        width: 1.55rem;
+        height: 1.55rem;
+    }
+    .text-2,.text-3,.text-5{
+        font-size: 0.5rem;
+    }
+    .text-4,.text-10,.text-7,.button-3,.text-8{
+        font-size: 0.6rem;
+    }
+    .question-4{
+        padding: 4%;
+    }
+    .link-2 {
+        margin-right: 0;
+    }
+    .envio{
+        font-size: 0.5rem;
+    }
+    .cuenta{
+        font-size: 0.5rem;
+    }
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0.5rem;
+    }
+
+    .question {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+
+    .imagen-2 {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2rem;
+    }
+    h2{
+        font-size: 0.6rem;
+
+    }
+    .box{
+        height: 0.6rem;
+        font-size: 0.5rem;
+    }
+    .inputs{
+        font-size: 0.5rem;
+    }
+
+    .question-2 {
+        width: 100%;
+    }
+    .error{
+        color: red;
+        font-size: 0.5rem;
+    }
+
+    .image-3 {
+        height: auto;
+    }
+    .img-4{
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    #submit{
+        width: 2rem;
+        font-size: 0.4rem;
+    }
+    .form-1{
+        width: 100%;
+        margin-right: 5%;
+    }
+    .pregunta {
+        margin-top: 10px;
+    }
+
+    .title-1 {
+        overflow: visible;
+    }
+    .question-4{
+        padding: 1rem;
+    }
+
+    .title-2 {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+    }
+
+
+    .button-1 {
+        height: 100%;
+        font-size: 0.5rem;
+        border-style: hidden;
+    }
+}
+@media (min-width: 300px) and (max-width: 767px) {
+
+    .content-1{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    }
+    .content-2 {
+        width: 50%;
+    }
+    .xa{
+        width: 25%;
+    }
+    .imagen-1 {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 20px;
+    }
+    .text-box{
+        flex-direction: column;
+    }
+    .tex1{
+        width: 100%;
+        height: 1.5rem;
+    }
+    .text-1 {
+        font-size: 1rem;
+    }
+    .box-2{
+        font-size: 0.5rem;
+    }
+    .img-5{
+        width: 1.55rem;
+        height: 1.55rem;
+    }
+    .nom{
+        font-size: 0.6rem;
+    }
+    .text-2,.text-3,.text-5{
+        font-size: 0.7rem;
+    }
+    .text-4,.text-10,.text-7,.button-3,.text-8{
+        font-size: 0.6rem;
+    }
+
+    .link-2 {
+        margin-right: 0;
+    }
+    .envio{
+        font-size: 0.5rem;
+    }
+    .cuenta{
+        font-size: 0.5rem;
+    }
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0.5rem;
+    }
+
+    .question {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+
+    .imagen-2 {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2rem;
+    }
+    h2{
+        font-size: 0.9rem;
+
+    }
+    .box{
+        height: 0.8rem;
+        font-size: 0.5rem;
+    }
+    .inputs{
+        font-size: 0.5rem;
+    }
+
+    .question-2 {
+        width: 100%;
+    }
+    .error{
+        color: red;
+        font-size: 0.5rem;
+    }
+
+    .image-3 {
+        height: auto;
+    }
+    .img-4{
+        width: 1rem;
+        height: 1rem;
+    }
+    #submit{
+        width: 4rem;
+        font-size: 0.5rem;
+    }
+    .form-1{
+        width: 100%;
+        margin-right: 5%;
+    }
+    .pregunta {
+        margin-top: 10px;
+    }
+
+    .title-1 {
+        overflow: visible;
+    }
+
+    .title-2 {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+    }
+    .question-4{
+        padding: 1rem;
+    }
+
+    .button-1 {
+        height: 100%;
+        font-size: 0.6rem;
+        border-style: hidden;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .content-1,
+    .content-2 {
+        width: 80%;
+    }
+    .form-1{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .imagen-1 {
+        width: 4rem;
+         height: 3.5rem;
+    }
+
+    .text-1 {
+        font-size: 2rem;
+    }
+
+    .link-2 {
+        margin-right: 0;
+    }
+
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .question {
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+
+    .imagen-2 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .question-2 {
+        width: 100%;
+    }
+
+
+    .image-3 {
+        height: auto;
+    }
+
+    .pregunta {
+        margin-top: 10px;
+    }
+
+    .title-1 {
+        overflow: visible;
+    }
+
+    .title-2 {
+        width: 30px;
+        height: 30px;
+        margin: 3px;
+    }
+
+    .button-1 {
+        height: 40px;
+    }
 }

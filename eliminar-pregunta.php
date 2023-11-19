@@ -3,10 +3,10 @@
     $boton=$_POST['elimina'];
     $id_pregunta=$_POST['id-pregunta'];
     if(!isset($id_pregunta)){
-        header("location: http://localhost/twitter/index.php");
+        header("location: index.php");
     }
     if($boton=="Cancelar"){
-            header("location: http://localhost/twitter/index.php");
+            header("location: index.php");
     
     }else{
         include('conexion.php');       
@@ -15,7 +15,7 @@
         $stmt4->bindParam(':id_pregunta',$id_pregunta);
         $stmt4->execute();
         $_SESSION["id_pregunta"]=$id_pregunta; 
-        header("location: http://localhost/twitter/index.php");
+        header("location: index.php");
     }
     
 ?>

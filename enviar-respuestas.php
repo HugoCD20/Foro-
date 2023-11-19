@@ -12,12 +12,12 @@ session_start();
             $respuesta=$_POST['pregunta'];
             if($respuesta==''){
                 $_SESSION['error2']='No puedes hacer una respuesta vacia';
-                header("location: http://localhost/twitter/responder.php");
+                header("location: responder.php");
                 exit();
             }
             if(strlen($respuesta)>500){
                 $_SESSION['error2']='La respuesta es demasiada larga';
-                header("location: http://localhost/twitter/respuestas.php");
+                header("location: respuestas.php");
                 exit();
             }
             $consulta = "INSERT INTO respuestas (id_pregunta,id_respuesta,id_usuario,respuesta) 
@@ -31,9 +31,9 @@ session_start();
             $_SESSION["id_pregunta"]=$id_pregunta; 
             echo $id_pagina;
             if($id_pagina=='pagina2'){
-                header("location: http://localhost/twitter/mostrar-respuestas.php");
+                header("location: mostrar-respuestas.php");
             }else{
-                header("location: http://localhost/twitter/respuestas.php");
+                header("location: respuestas.php");
             }
            
         } catch (PDOException $e) {
